@@ -114,7 +114,8 @@ void load(const char* path, bloom* bl){
 int main()
 {
     srand(time(0));
-    bloom* bl = gen_optimal_bloom(2000000, 0.01f);
+    bloom* bl = gen_optimal_bloom(2000000, 0.01f); //For instance, we will have setted 2 000 000 values
+    generat("C:\\o.txt", 2000000); //Generate a lot of random strings and load to a text file
     load("C:\\o.txt", bl);
     while(true){
         string str;
